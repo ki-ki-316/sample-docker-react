@@ -8,4 +8,4 @@ services:
 before_install: 
     - docker build -t yuwangjr/sample-app -f Dockerfile.dev .
 script:     
-    - docker run -e CI=true yuwangjr/sample-app npm run test -- --coverage --watchAll=false
+    - docker run -e CI=true ki-ki-316/sample-app npm run test -- --coverage --watchAll=false
